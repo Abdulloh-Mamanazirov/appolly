@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import "./header.css";
 import logo from "../../images/logo.png";
@@ -36,7 +36,7 @@ const Nav = () => {
       <div className="header rounded-3 bg-white p-3 container d-flex justify-content-between align-items-center ">
         <ul className="m-0 d-flex gap-4 list-unstyled align-items-center">
           <Link className="text-decoration-none text-reset" to="/">
-            HOME
+            HOME{location.pathname === "/" && "👈"}
           </Link>
           <li>ABOUT</li>
           <li>FEATURES</li>
@@ -47,7 +47,7 @@ const Nav = () => {
         <ul className="m-0 d-flex gap-4 list-unstyled align-items-center">
           <li>SCREENSHOT</li>
           <Link className="text-decoration-none text-reset" to="/blog">
-            BLOG
+            BLOG{location.pathname === "/blog" && "👈"}
           </Link>
           <li className="m-0 btn btn-primary">DOWNLOAD</li>
         </ul>
