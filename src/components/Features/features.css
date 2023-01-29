@@ -1,0 +1,14 @@
+.fa-message, .fa-user{
+    font-size: 70px;
+    width: 100%;
+    padding: 0 auto !important;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.gridItem2{
+    grid-row: span 2 ;
+}

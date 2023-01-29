@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-bg{
+  background-color:#5851EA;
+}
+
+.blogCards{
+  width: 70%;
+}
+.blogCards img{
+  width: 100%;
+}
+.blogAside{
+  width: 30%;
+}

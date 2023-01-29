@@ -1,0 +1,9 @@
+.usage{
+    height: 70vh;
+}
+
+.video{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
